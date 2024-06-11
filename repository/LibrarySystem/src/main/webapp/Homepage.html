@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Library</title>
+  <link rel="stylesheet" href="styli.css">
+</head>
+<style>
+body{
+    background: url("https://www.uihmt.com/images/library-management.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#world{
+    font-size:75px;
+    color:rgb(237, 237, 48,0.84);
+    background-color:rgb(210, 96, 25,0.419);;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom:20px;
+    
+    margin-left:20px;
+}
+.container{
+    background-color:  rgb(210, 96, 25,0.419);
+    color:rgb(239, 239, 32);
+    font-weight: 200;
+    display:flex;
+    height:250px;
+    width:600px;
+    flex-direction: column;
+    justify-content:centre;
+    align-items:centre;
+    align-content:centre;
+    margin-left:400px;
+    font-size:35px;
+    border-radius: 40px;
+    border:2px solid rgb(226, 64, 5);
+
+    
+
+
+}
+.admin{
+    color:white;
+    text-decoration: none;
+    background-color: rgb(210, 96, 25);
+    height:75px;
+    width:200px;
+    font-size:25px;
+    margin:0;
+    border-radius:30px ;
+    padding:0;
+    text-align:center;
+    position:relative;
+    top:30px;
+    left:50px;
+}
+.adt{
+padding:2px;
+margin-top:5px;
+}
+.stu{
+    background-color: rgb(210, 96, 25);
+    color:white;
+    text-decoration: none;
+    height:75px;
+    width:200px;
+    font-size:25px;
+    margin:0;
+    padding:0;
+    border-radius:30px ;
+    text-align:center;
+    position:relative;
+    left:275px;
+    bottom:55px;
+   border:
+    
+
+    
+}
+.admin:hover{
+    background-color:black;
+    
+}
+.admin a:hover{
+   transition: font-size 2s ease-in-out 0.2s;
+}
+.stu:hover{
+    background-color:black;
+}
+</style>
+
+<body >
+    <div id="world">
+        <p>Welcome to the world of knowledge</p>
+    </div>
+    <div class="container">
+        <b><p style="margin-left:220px">Login As</p></b>
+        <div class="admin">
+    
+               <a id="adt" href="adminlogin.html" style="color:rgb(229, 237, 60)"> Admin</a>
+        </div>
+        <br>
+        <div class="stu">
+        
+                <a id="stut" href="studentloginpage.html" style="color:rgb(229, 237, 60)">Student</a>
+        </div>
+    
+    </div>
+</body>
