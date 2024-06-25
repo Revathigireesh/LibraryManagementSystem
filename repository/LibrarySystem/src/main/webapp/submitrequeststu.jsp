@@ -35,7 +35,7 @@
                     Class.forName("com.mysql.cj.jdbc.Driver");
 
                     // Connect to student database
-                    conStudent = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentlogin", "root", "#Dhuvihegde26");
+                    conStudent = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentlogin", "root", "your_password");
 
                     // Validate student details
                     PreparedStatement pst = conStudent.prepareStatement("SELECT * FROM newuserstudent WHERE usn = ? AND username = ?");
