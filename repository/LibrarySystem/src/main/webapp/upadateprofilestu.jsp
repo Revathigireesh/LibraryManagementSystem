@@ -30,7 +30,7 @@
 
                 try {
                     Class.forName("com.mysql.cj.jdbc.Driver");
-                    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentlogin", "root", "#Dhuvihegde26");
+                    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentlogin", "root", "your_password");
 
                     String query = "SELECT * FROM newuserstudent WHERE usn = ?"; // Assuming usn is unique
                     ps = con.prepareStatement(query);
