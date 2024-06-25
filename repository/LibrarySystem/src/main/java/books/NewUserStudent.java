@@ -41,7 +41,7 @@ public class NewUserStudent extends HttpServlet {
 	                return;
 	            }
 	            Class.forName("com.mysql.cj.jdbc.Driver");
-	            try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentlogin", "root", "#Dhuvihegde26");
+	            try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentlogin", "root", "your_password");
 	                 PreparedStatement psCheck = con.prepareStatement("SELECT * FROM newuserstudent WHERE usn = ?");
 	                 PreparedStatement psInsert = con.prepareStatement(INSERT_QUERY)) {
 
