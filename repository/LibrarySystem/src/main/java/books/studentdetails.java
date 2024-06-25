@@ -41,7 +41,7 @@ public class studentdetails extends HttpServlet {
                 Class.forName("com.mysql.cj.jdbc.Driver");
 
                 // Establish a connection to the database
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentlogin", "root", "#Dhuvihegde26");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentlogin", "root", "your_password");
 
                 // Prepare the SQL query to fetch student details by USN
                 String query = "SELECT username, email, usn, branch FROM newuserstudent WHERE usn=?";
