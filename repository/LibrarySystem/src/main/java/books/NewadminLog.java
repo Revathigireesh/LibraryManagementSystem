@@ -36,7 +36,7 @@ public class NewadminLog extends HttpServlet {
         String adminid = request.getParameter("adminid");
         String password = request.getParameter("password");
         
-        try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "#Dhuvihegde26");
+        try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "your_password");
              PreparedStatement ps = con.prepareStatement(SELECT_QUERY)) {
 
             ps.setString(1, username);
