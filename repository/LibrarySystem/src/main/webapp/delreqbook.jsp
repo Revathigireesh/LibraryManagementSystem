@@ -24,7 +24,7 @@
                     Class.forName("com.mysql.cj.jdbc.Driver");
 
                     // Connect to admin database
-                    conAdmin = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "#Dhuvihegde26");
+                    conAdmin = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "your_password");
 
                     // Delete request details from admin database
                     PreparedStatement pstDelete = conAdmin.prepareStatement("DELETE FROM requestedbooks WHERE BookID = ?");
