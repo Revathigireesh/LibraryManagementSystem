@@ -17,7 +17,7 @@
         PreparedStatement stmt = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "#Dhuvihegde26");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "your_paassword");
             String sql = "UPDATE requestedbooks SET status = 'accepted' WHERE BookID = ?";
             stmt = con.prepareStatement(sql);
             stmt.setInt(1, Integer.parseInt(bookID));
