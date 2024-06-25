@@ -22,7 +22,7 @@
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "#Dhuvihegde26");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "your_password");
             String query = "INSERT INTO bookrequests (BookID, BookName, Edition, username, usn,request_date) VALUES (?, ?, ?, ?, ?,?)";
             PreparedStatement pstmt = con.prepareStatement(query);
             pstmt.setString(1, bookID);
