@@ -65,7 +65,7 @@
             <% 
                 try {
                     Class.forName("com.mysql.cj.jdbc.Driver");
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "#Dhuvihegde26");
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "your_password");
 
                     // Modify the query to fetch only accepted books
                     String query = "SELECT BookID, BookName,Edition,username,usn from requestedbooks where status='accepted' ";
