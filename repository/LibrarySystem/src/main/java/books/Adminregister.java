@@ -36,7 +36,7 @@ public class Adminregister extends HttpServlet {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             // Establish a connection to the database
-            try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "#Dhuvihegde26");
+            try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "your_password");
                  PreparedStatement psCheck = con.prepareStatement("SELECT * FROM newuseradmin WHERE adminid=?")) {
 
                 // Check if the user with the given admin ID already exists
