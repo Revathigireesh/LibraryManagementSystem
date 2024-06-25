@@ -90,7 +90,7 @@
     try {
         // Establish database connection
         Class.forName("com.mysql.cj.jdbc.Driver");
-        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentlogin", "root", "#Dhuvihegde26");
+        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentlogin", "root", "your_password");
 
         // Debug statement to print the SQL query
         String query = "SELECT username, email, usn, branch FROM newuserstudent WHERE username=?";
