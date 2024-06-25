@@ -35,7 +35,7 @@ public class ToAddNewBook extends HttpServlet {
 
      try {
          Class.forName("com.mysql.cj.jdbc.Driver");
-         try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "#Dhuvihegde26");
+         try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "your_password");
               PreparedStatement ps = con.prepareStatement(INSERT_QUERY)) {
 
              ps.setString(1, BookName);
