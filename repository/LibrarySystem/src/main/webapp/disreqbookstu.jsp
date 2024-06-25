@@ -67,7 +67,7 @@
 
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "#Dhuvihegde26");
+                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adminlogin", "root", "your_password");
 
                 // Prepare the SQL statement to select data based on USN
                 String query = "SELECT * FROM requestedbooks WHERE usn = ?";
