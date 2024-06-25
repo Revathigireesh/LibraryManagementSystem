@@ -64,7 +64,7 @@
             <% 
                 try {
                     Class.forName("com.mysql.cj.jdbc.Driver");
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentlogin", "root", "#Dhuvihegde26");
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentlogin", "root", "your_password");
                     Statement st = con.createStatement();
                     ResultSet rs = st.executeQuery("SELECT * FROM newuserstudent");
 
